@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
-    //作为library的module, 不需要些applicationId，并将
+    //作为library的module, 不需要写applicationId，并将
     // apply plugin: 'com.android.application'改为apply plugin: 'com.android.library'
     defaultConfig {
         minSdkVersion 15
@@ -29,3 +29,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'in.srain.cube:ptr-load-more:1.0.3'
 }
+
+//注意写在android{}的配置后面
+apply from: "bintrayUpload.gradle"

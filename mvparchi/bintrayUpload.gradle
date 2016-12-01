@@ -1,11 +1,11 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // This is the library version used when deploying the artifact
-version = "1.0.0"
+version = "0.9.8"
 
-def siteUrl = 'https://git.oschina.net/crazycodeboy/ScanProj'      // 项目的主页
-def gitUrl = 'https://git.oschina.net/crazycodeboy/ScanProj.git'   // Git仓库的url
-group = "com.jph.scan.zxing"                                        // Maven Group ID for the artifact，一般填你唯一的包名
+def siteUrl = 'https://github.com/navyifanr/MvpArchi'      // 项目的主页
+def gitUrl = 'https://github.com/navyifanr/MvpArchi.git'   // Git仓库的url
+group = "cn.cfanr.mvparchi"                                        // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -24,9 +24,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'you id'        //填写的一些基本信息
-                        name 'your name'
-                        email 'your email'
+                        id 'cfanr'        //填写的一些基本信息
+                        name 'navyifanr'
+                        email 'navyifanr@gmail.com'
                     }
                 }
                 scm {
@@ -62,7 +62,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "ScanProj"    //发布到JCenter上的项目名字
+        name = "MvpArchi"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
