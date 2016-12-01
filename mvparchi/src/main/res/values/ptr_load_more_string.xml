@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ptr_classic_pull_down_to_refresh">下拉刷新</string>
+    <string name="ptr_classic_pull_down">下拉</string>
+    <string name="ptr_classic_refreshing">加载中...</string>
+    <string name="ptr_classic_refresh_complete">更新完成.</string>
+    <string name="ptr_classic_release_to_refresh">释放刷新</string>
+
+    <string name="ptr_load_more_load">上拉加载</string>
+    <string name="ptr_load_more_loading">加载中...</string>
+    <string name="ptr_load_more_click_to_load_more">点击加载更多</string>
+    <string name="ptr_load_more_loaded_no_more">已全部加载</string>
+    <string name="ptr_load_more_loaded_empty">没有数据了</string>
+    <string name="ptr_load_more_error">加载错误，点击重试</string>
+</resources>

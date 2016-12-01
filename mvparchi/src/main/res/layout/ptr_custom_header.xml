@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F6F6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/ptr_header_top_bottom_padding"
+        android:paddingBottom="@dimen/ptr_header_top_bottom_padding"
+        android:paddingLeft="@dimen/ptr_header_left_right_padding"
+        android:paddingRight="@dimen/ptr_header_left_right_padding"
+        >
+        <TextView
+            android:id="@+id/ptr_header_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#666666"
+            android:text="释放刷新"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/ptr_header_progress_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/ptr_header_margin_top"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ptr_header_refresh_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/ptr_header_state_text"
+            android:src="@drawable/ptr_rotate_arrow"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ptr_header_ptr_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:maxHeight="60dp"
+        android:minHeight="45dp"
+        />
+
+</LinearLayout>

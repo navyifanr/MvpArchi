@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.xifan.demo.ui.fragment.HomeFragment">
+
+    <!--<cn.xifan.mvparchi.widget.ptr.PtrClassicLayout-->
+        <!--android:id="@+id/ptr_classic_layout_home"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view_home"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</cn.xifan.mvparchi.widget.ptr.PtrClassicLayout>-->
+
+    <cn.cfanr.mvparchi.widget.ptr.PtrRecyclerView
+        android:id="@+id/ptr_recycler_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</FrameLayout>

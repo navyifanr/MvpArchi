@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MvpArchi</string>
+
+    <string name="loading_progress">加载中</string>
+</resources>
