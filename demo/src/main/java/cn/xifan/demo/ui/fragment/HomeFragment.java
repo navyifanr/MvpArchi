@@ -57,7 +57,7 @@ public class HomeFragment extends BaseFragment implements HomeView {
     @Override
     public void initViews(View layoutView) {
         mRecyclerView = $(layoutView, R.id.ptr_recycler_view_home);
-        mAdapter = new HomeAdapter(getActivity(), newsList);
+        mAdapter = new HomeAdapter(mContext, newsList);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.autoRefresh();
         mRecyclerView.setPtrLoadMoreListener(new PtrLoadMoreListener() {

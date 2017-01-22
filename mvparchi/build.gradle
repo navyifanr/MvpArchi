@@ -31,4 +31,4 @@ dependencies {
 }
 
 //注意写在android{}的配置后面
-apply from: "bintrayUpload.gradle"
+apply from: "bintray.gradle"

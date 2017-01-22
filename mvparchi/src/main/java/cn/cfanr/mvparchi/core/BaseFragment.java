@@ -1,6 +1,7 @@
 package cn.cfanr.mvparchi.core;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
@@ -15,11 +16,18 @@ import cn.cfanr.mvparchi.ui.dialog.LoadingProgressDialog;
  * @author xifan
  */
 public abstract class BaseFragment extends Fragment {
+    public Context mContext;
     private View layoutView;
     protected LoadingProgressDialog mProgressDialog;
 
     public BaseFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        this.mContext = context;
     }
 
     @Override
